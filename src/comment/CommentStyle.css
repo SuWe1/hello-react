@@ -1,24 +1,25 @@
 
 
-.wrapper{
-    width: 500px;
-    margin: 10px auto;
-    font-size: 14px;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    padding: 20px;
+.wrapper {
+  width: 500px;
+  margin: 10px auto;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  padding: 20px;
 }
 
-.comment-input{
-    background-color: #ffffff;
-    border: 1px solid #f1f1f1;
-    padding: 20px;
-    margin-bottom: 10px;
+/* 评论框样式 */
+.comment-input {
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
-.comment-field{
-    display: flex;
-    margin-bottom: 15px;
+.comment-field {
+  margin-bottom: 15px;
+  display: flex;
 }
 
 .comment-field .comment-field-name {
@@ -76,6 +77,7 @@
 
 /* 评论组件样式 */
 .comment {
+  position: relative;
   display: flex;
   border-bottom: 1px solid #f1f1f1;
   margin-bottom: 10px;
@@ -87,12 +89,40 @@
   flex-shrink: 0;
 }
 
-.comment span {
+.comment-username {
   color: #00a3cf;
   font-style: italic;
+}
+
+.comment-createdtime {
+  padding-right: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.comment:hover .comment-delete {
+  color: #00a3cf;
+}
+
+.comment-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: transparent;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 .comment p {
   margin: 0;
   /*text-indent: 2em;*/
+}
+
+code {
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  padding: 0px 2px;
 }
